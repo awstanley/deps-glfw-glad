@@ -2,7 +2,7 @@
 
 Among the general problems and frustrations with cross-platform construction of OpenGL applications is linking against the libraries in a flexible way.  GLFW3 and glad both offer CMakeLists within their repositories, and may thus be handled as a base for building applications (both for testing, and for real-world applications).
 
-Note: This CMakeLists follows the defaults and just exposes them as a pair.  It's designed to be used to make life easier (e.g. I use it for rapidly dropping prototypes/tests together).  *You will probably want to switch to dynamic/shared compilation of GLFW, disable docs, tests, and examples if you don't need/want them.*
+Note: This CMakeLists runs slightly modified defaults; they're modifiable, but since dynamic/shared linking is typically better (for many reasons) it's now the default.
 
 ## Building
 
