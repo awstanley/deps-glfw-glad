@@ -12,7 +12,7 @@ Note: This CMakeLists runs slightly modified defaults; they're modifiable, but s
     git clone https://github.com/awstanley/deps-glfw-glad
     cd deps-glfw-glad
     git submodule init
-    git submodule update --remote --merge
+    git submodule update --init --recursive
 
 
 ### Setting up the build
@@ -29,7 +29,7 @@ Then use your toolchain as normal.
 
 From within the project:
 
-    git submodule update --remote --merge
+    git submodule update --init --recursive
 
 If you are embedded within another project, the above command will work if it is a git repository.
 
@@ -53,4 +53,4 @@ The sample is a trivial GLFW3 sample using glad.  By default it is disabled but 
 
 As I've been asked, consider this public domain (it's just a CMakeLists file!); licences for libraries used obviously vary, and at the time of writing they are both under the MIT.  (Check respective `LICENCE` or `COPYING` files).
 
-If public domain isn't available for you (for whatever legal reason), consider this under MIT.
+If public domain isn't available for you (for whatever legal reason), consider this under zlib/png.
